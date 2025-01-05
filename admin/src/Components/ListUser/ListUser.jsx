@@ -1,51 +1,59 @@
 import React, { useEffect, useState } from "react";
 import "./ListUser.css";
-import cross_icon from '../Assets/cross_icon.png'
-import { backend_url, currency } from "../../App";
+import cross_icon from '../Assets/cross_icon.png';
+import { backend_url } from "../../App";
 
-const ListProduct = () => {
-  const [allproducts, setAllProducts] = useState([]);
+const ListUser = () => {
+  const [allUsers, setAllUsers] = useState([]);
 
-  const fetchInfo = () => {
-    fetch(`${backend_url}/allproducts`)
+  const fetchUsers = () => {
+    fetch(`${backend_url}/allusers`) // Ensure this endpoint is implemented on the backend
       .then((res) => res.json())
-      .then((data) => setAllProducts(data))
-  }
+      .then((data) => setAllUsers(data))
+      .catch((error) => console.error("Error fetching users:", error));
+  };
 
   useEffect(() => {
-    fetchInfo();
-  }, [])
+    fetchUsers();
+  }, []);
 
-  const removeProduct = async (id) => {
-    await fetch(`${backend_url}/removeproduct`, {
-      method: 'POST',
+  const removeUser = async (id) => {
+    await fetch(`${backend_url}/removeuser`, { // Ensure this endpoint is implemented on the backend
+      method: "POST",
       headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
+        Accept: "application/json",
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({ id: id }),
-    })
-
-    fetchInfo();
-  }
+      body: JSON.stringify({ id }),
+    });
+    fetchUsers();
+  };
 
   return (
-    <div className="listproduct">
+    <div className="listuser">
       <h1>All Users List</h1>
-      <div className="listproduct-format-main">
-        <p>User ID</p> <p>Email Address</p> <p>Full Name</p> <p>Created</p> <p>Last Visit</p> <p>Remove</p>
+      <div className="listuser-format-main">
+        <p>User ID</p>
+        <p>Email Address</p>
+        <p>Full Name</p>
+        <p>Created</p>
+        <p>Remove</p>
       </div>
-      <div className="listproduct-allproducts">
+      <div className="listuser-allusers">
         <hr />
-        {allproducts.map((e, index) => (
+        {allUsers.map((user, index) => (
           <div key={index}>
-            <div className="listproduct-format-main listproduct-format">
-              <img className="listproduct-product-icon" src={backend_url + e.image} alt="" />
-              <p className="cartitems-product-title">{e.name}</p>
-              <p>{currency}{e.old_price}</p>
-              <p>{currency}{e.new_price}</p>
-              <p>{e.category}</p>
-              <img className="listproduct-remove-icon" onClick={() => { removeProduct(e.id) }} src={cross_icon} alt="" />
+            <div className="listuser-format-main listuser-format">
+              <p>{user._id}</p>
+              <p>{user.email}</p>
+              <p>{user.name}</p>
+              <p>{new Date(user.date).toLocaleDateString()}</p>
+              <img
+                className="listuser-remove-icon"
+                onClick={() => removeUser(user._id)}
+                src={cross_icon}
+                alt="Remove User"
+              />
             </div>
             <hr />
           </div>
@@ -55,4 +63,4 @@ const ListProduct = () => {
   );
 };
 
-export default ListProduct;
+export default ListUser;

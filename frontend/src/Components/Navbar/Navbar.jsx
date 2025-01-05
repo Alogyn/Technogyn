@@ -26,7 +26,7 @@ const Navbar = () => {
       </Link>
       <img onClick={dropdown_toggle} className='nav-dropdown' src={nav_dropdown} alt="" />
       <ul ref={menuRef} className="nav-menu">
-        <li onClick={()=>{setMenu("shop")}}><Link to='/' style={{ textDecoration: 'none' }}>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("shop")}}><Link to='/' style={{ textDecoration: 'none' }}>Home</Link>{menu==="shop"?<hr/>:<></>}</li>
         <li onClick={()=>{setMenu("computers")}}><Link to='/computers' style={{ textDecoration: 'none' }}>Computers</Link>{menu==="computers"?<hr/>:<></>}</li>
         <li onClick={()=>{setMenu("pchardware")}}><Link to='/pchardware' style={{ textDecoration: 'none' }}>PC Hardware</Link>{menu==="pchardware"?<hr/>:<></>}</li>
         <li onClick={()=>{setMenu("peripherals")}}><Link to='/peripherals' style={{ textDecoration: 'none' }}>Peripherals</Link>{menu==="peripherals"?<hr/>:<></>}</li>

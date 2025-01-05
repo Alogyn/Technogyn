@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDB
-mongoose.connect("---- Your Mongo db compass Link here ----/e-commerce");
+mongoose.connect("mongodb+srv://derfoufimohamed96:1234567890@cluster0.sakwf.mongodb.net/e-commerce");
 
 // paste your mongoDB Connection string above with password
 // password should not contain '@' special character
@@ -244,4 +244,14 @@ app.post("/removeproduct", async (req, res) => {
 app.listen(port, (error) => {
   if (!error) console.log("Server Running on port " + port);
   else console.log("Error : ", error);
+});
+
+app.get("/allusers", async (req, res) => {
+  let users = await Users.find({});
+  res.send(users);
+});
+
+app.post("/removeuser", async (req, res) => {
+  await Users.findOneAndDelete({ _id: req.body.id });
+  res.json({ success: true });
 });

@@ -6,7 +6,7 @@ import navprofileIcon from '../Assets/nav-profile.svg'
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <img src={navlogo} className='nav-logo' alt="" />
+      <a href="http://localhost:3001/"><img src={navlogo} className='nav-logo' alt="" /></a>
       <img src={navprofileIcon} className='nav-profile' alt="" />
     </div>
   )

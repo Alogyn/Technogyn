@@ -9,6 +9,8 @@ import women_banner from "./Components/Assets/banner_women.png";
 import men_banner from "./Components/Assets/banner_mens.png";
 import kid_banner from "./Components/Assets/banner_kids.png";
 import LoginSignup from "./Pages/LoginSignup";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 
 export const backend_url = 'http://localhost:4000';
 export const currency = '$';
@@ -29,6 +31,8 @@ function App() {
           </Route>
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
         <Footer />
       </Router>

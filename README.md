@@ -112,7 +112,6 @@ technogyn/
 ├── backend/          # Node.js backend
 ├── admin/            # Admin dashboard
 ├── LICENSE/          # License for project components
-├── AUTHOR/           # Author details
 └── README.md         # Project documentation
 ```
 

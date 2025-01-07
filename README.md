@@ -78,7 +78,7 @@ npm install
 
 #### For the Admin Panel:
 ```bash
-cd admin-panel
+cd admin
 npm install
 ```
 

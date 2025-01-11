@@ -137,6 +137,14 @@ technogyn/
 
 ---
 
+## Demo Video 🎬
+
+Watch the demo video of **Technogyn** on YouTube:
+
+[![Technogyn Demo Video](https://img.youtube.com/vi/WUWh07x9B3w/maxresdefault.jpg)](https://youtu.be/WUWh07x9B3w?si=spHZ3w13kieMHWIR)
+
+---
+
 ## **Copyright** ©️  
 **Technogyn** © 2025 Mohamed Derfoufi. All rights reserved.  
 This project is licensed under the MIT License. See the `LICENSE/` directory for more information.

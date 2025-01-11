@@ -142,7 +142,7 @@ technogyn/
 
 Watch the demo video of **Technogyn** on YouTube:
 
-[![Technogyn Demo Video](https://img.youtube.com/vi/WUWh07x9B3w/0.jpg)](https://youtu.be/WUWh07x9B3w?si=spHZ3w13kieMHWIR)
+[![Technogyn Demo Video](https://img.youtube.com/vi/WUWh07x9B3w/maxresdefault.jpg)](https://youtu.be/WUWh07x9B3w?si=spHZ3w13kieMHWIR)
 
 ---
 

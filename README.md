@@ -6,15 +6,16 @@ Welcome to **Technogyn**, an innovative e-commerce platform designed to provide 
 ---
 
 ## **Table of Contents** 📋  
-1. [Overview](#overview)  
+1. [Overview](#Overview)  
 2. [Features](#features)  
 3. [Technologies Used](#technologies-used)  
 4. [Installation and Setup](#installation-and-setup)  
 5. [Project Structure](#project-structure)  
 6. [Usage](#usage)  
 7. [Author](#author)  
-8. [Resources](#resources)  
-9. [Copyright](#copyright)  
+8. [Resources](#resources)
+9. [Demo Video](#demo-video)  
+10. [Copyright](#copyright)  
 
 ---
 
@@ -141,7 +142,7 @@ technogyn/
 
 Watch the demo video of **Technogyn** on YouTube:
 
-[![Technogyn Demo Video](https://img.youtube.com/vi/WUWh07x9B3w/maxresdefault.jpg)](https://youtu.be/WUWh07x9B3w?si=spHZ3w13kieMHWIR)
+[![Technogyn Demo Video](https://img.youtube.com/vi/WUWh07x9B3w/0.jpg)](https://youtu.be/WUWh07x9B3w?si=spHZ3w13kieMHWIR)
 
 ---
 

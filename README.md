@@ -148,5 +148,3 @@ Watch the demo video of **Technogyn** on YouTube:
 ## **Copyright** ©️  
 **Technogyn** © 2025 Mohamed Derfoufi. All rights reserved.  
 This project is licensed under the MIT License. See the `LICENSE/` directory for more information.
-
-https://youtu.be/WUWh07x9B3w?si=spHZ3w13kieMHWIR
